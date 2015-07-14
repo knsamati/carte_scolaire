@@ -17,14 +17,7 @@ shinyUI(
       right = 30, top = 10, width = 200, class = "floater",
       selectInput("degre", label = h3("Selection de niveau:"),
                   choices = list("Jardin","Primaire","Collège","Lycée"),selected = "Jardin")
-    ),
-  absolutePanel(
-    right = 30, top = 280, style = "", class = "floater",
-
-    h4("Info sur l'établissement"),
-    uiOutput("Info")
-  )
-
+    )
   )
 )
 
